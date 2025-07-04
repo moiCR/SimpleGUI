@@ -1,0 +1,4 @@
+name: SimpleGUI
+version: '1.0-SNAPSHOT'
+main: git.snowk.simplegui
+api-version: '1.18'
