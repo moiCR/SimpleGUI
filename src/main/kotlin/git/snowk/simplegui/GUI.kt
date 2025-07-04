@@ -8,7 +8,7 @@ import org.bukkit.inventory.Inventory
 import org.bukkit.inventory.ItemStack
 import org.bukkit.scheduler.BukkitTask
 
-abstract class Menu (val manager : MenuManager, val player : Player, val autoUpdate : Boolean = false) {
+abstract class GUI (val manager : GUIManager, val player : Player, val autoUpdate : Boolean = false) {
 
     var task : BukkitTask? = null
     var inventory : Inventory? = null

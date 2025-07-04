@@ -1,6 +1,6 @@
 package git.snowk.simplegui.listener
 
-import git.snowk.simplegui.MenuManager
+import git.snowk.simplegui.GUIManager
 import git.snowk.simplegui.sound.CompatibleSound
 import org.bukkit.Bukkit
 import org.bukkit.entity.Player
@@ -9,7 +9,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent
 import org.bukkit.event.inventory.InventoryCloseEvent
 
-class MenuListener (val manager: MenuManager) : Listener {
+class GUIListener (val manager: GUIManager) : Listener {
 
     init {
         Bukkit.getPluginManager().registerEvents(this, manager.plugin)

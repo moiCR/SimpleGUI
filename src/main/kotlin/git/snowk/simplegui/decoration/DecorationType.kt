@@ -1,11 +1,11 @@
 package git.snowk.simplegui.decoration
 
-import git.snowk.simplegui.Menu
+import git.snowk.simplegui.GUI
 
 enum class DecorationType {
 
     FILL{
-        override fun decorate(menu: Menu) {
+        override fun decorate(menu: GUI) {
             val size = menu.getSize();
             val item = menu.decorationItem;
             val inventory = menu.inventory!!;
@@ -21,7 +21,7 @@ enum class DecorationType {
     },
 
     BORDER{
-        override fun decorate(menu: Menu) {
+        override fun decorate(menu: GUI) {
             val size = menu.getSize()
             val item = menu.decorationItem
             val inventory = menu.inventory!!
@@ -48,5 +48,5 @@ enum class DecorationType {
     };
     
     
-    abstract fun decorate(menu : Menu)
+    abstract fun decorate(menu : GUI)
 }
